@@ -8,7 +8,9 @@ class Settings:
         self.screen_height = 800
         self.bg_color = (230,230,230)
 
+        # Ship settings
         self.ship_speed = 1.5
+        self.ship_limit = 2  # setting it to 2 allows there to be 3 chances for the game since the checking if ships left is > 0 happens after it's been hit by an alien
 
         # Bullet settings
         self.bullet_speed = 1.5
