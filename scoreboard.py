@@ -18,7 +18,7 @@ class Scoreboard:
         self.text_color = (30,30,30)
         self.font = pygame.font.SysFont(None, 48)
 
-        #prepare the initial score image
+        #prepare the initial score image, high score image, and ship images
         self.prep_score()
         self.prep_high_score()
         self.prep_level()
@@ -55,6 +55,7 @@ class Scoreboard:
 
     def prep_level(self):
         #turn the level into a rendered image
+        # LEVEL IS INCREASED IN THE ALIEN INVASION PROGRAM
         level_str = str(self.stats.level)
         self.level_image = self.font.render(level_str,True, self.text_color, self.settings.bg_color)
 

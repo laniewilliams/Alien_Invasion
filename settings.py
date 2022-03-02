@@ -23,7 +23,7 @@ class Settings:
         #How quickly the game speeds up
         self.speedup_scale = 1.1
 
-        # How quickly the alien point value increases
+        # How quickly the alien point value increases when a new level is reached
         self.score_scale = 1.5
 
         self.initialize_dynamic_settings()
@@ -32,7 +32,7 @@ class Settings:
         #Initialize settings that change throughout the game
         self.ship_speed = 1.5
         self.bullet_speed = 3.0
-        self.alien_speed = 1.0
+        self.alien_speed = 1.0 #how quickly the alien moves right and left
 
         #fleet direction of 1 represents right; -1 represents left
         self.fleet_direction = 1
