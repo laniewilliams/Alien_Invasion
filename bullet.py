@@ -13,7 +13,7 @@ class Bullet(Sprite):
 
         #Create a bullet rect at (0,0) and the set correct position.
         self.rect = pygame.Rect(0,0,self.settings.bullet_width, self.settings.bullet_height)
-        self.rect.midtop = ai_game.ship.rect.midtop
+        self.rect.midtop = ai_game.ship.rect.midtop #sets the midtop to be the same as the ship's so it looks like it's coming out of the ship
 
         #Store the bullets position as a decimal value
         self.y = float(self.rect.y)
@@ -21,8 +21,9 @@ class Bullet(Sprite):
     def update(self):
         #Move the bullet up the screen
         #Update the decimal position of the bullet
+        #when a bullet is fired it is added to the bullets group that then updates the position
 
-        self.y -= self.settings.bullet_speed
+        self.y -= self.settings.bullet_speed 
         #Update the rect position
         self.rect.y = self.y
 

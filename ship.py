@@ -8,7 +8,7 @@ class Ship(Sprite):
         # Initialize the ship and its starting position.
         super().__init__()
         self.screen = ai_game.screen
-        self.settings = ai_game.settings
+        self.settings = ai_game.settings #makes it so the ship can access all of its settings
         self.screen_rect = ai_game.screen.get_rect()
 
         # Load the ship and get its rect.
