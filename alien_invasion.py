@@ -42,7 +42,7 @@ class AlienInvasion:
 
     def run_game(self): #THIS IS WHAT RUNS THE GAME
         """Start the main loop for the game."""
-        while True:
+        while True: #while the game is running
             #Watch for keyboard and mouse events.
             self._check_events()  #this can't be in the if statement because we have to check when the player hits the play button
 
@@ -132,7 +132,7 @@ class AlienInvasion:
             if bullet.rect.bottom <= 0:
                 self.bullets.remove(bullet)
 
-        self._check_bullet_alien_collisions()
+        self._check_bullet_alien_collisions() #anytime the _update_bullets is run it keeps checking for collisions
 
     def _check_bullet_alien_collisions(self):
         # Check for any bullets that have hit aliens
